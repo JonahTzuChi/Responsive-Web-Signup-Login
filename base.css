@@ -1,0 +1,35 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: paleturquoise;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  width: 100%;
+  overflow: hidden;
+}
+
+p{
+  font-size: large;
+}
+
+/*
+  Change the color of all placeholders
+*/
+input::-moz-placeholder {
+    color: whitesmoke;
+  }
+  input:-moz-placeholder {
+    color: whitesmoke;
+    font-size: 14px !important;
+  }
+  *::-webkit-input-placeholder {
+    color: whitesmoke;
+    font-size: 14px !important;
+  }
+  *:-ms-input-placeholder {
+    color: whitesmoke;
+    font-size: 14px !important;
+  }
+  *:-moz-placeholder {
+    color: whitesmoke;
+    font-size: 14px !important;
+  }

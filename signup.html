@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="icon"
+			type="image/x-icon"
+			href="https://cfims.tzuchi.com.my/media/images/favicon.jpg"
+		/>
+		
+		<title>Entrance</title>
+		<script></script>
+		<link rel="stylesheet" href="signup.css" />
+		<link rel="stylesheet" href="base.css" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.min.js"></script>
+		<script src="https://cfims.tzuchi.com.my/media/scripts/forge.min.js"></script>
+	</head>
+
+	<body>
+		<div class="main">
+			<!--Future get file from media server-->
+			<img
+				src="https://cfims.tzuchi.com.my/media/images/logo.jpg"
+				class="avatar"
+			/>
+			<h1>Signup</h1>
+			<form>
+				<p>Username</p>
+				<input type="text" id="username" placeholder="Enter Username" />
+				<p>Email</p>
+				<input type="email" id="email" />
+				<p>Password</p>
+				<input type="password" id="password" />
+
+				<input
+					type="button"
+					id="btn_1"
+					name="submit"
+					class="submit"
+					value="Signup"
+					onclick="signup();"
+				/>
+				<p>OTP</p>
+				<input type="password" id="otp" disabled />
+				<input
+					type="button"
+					id="btn_3"
+					name="submit"
+					class="submit"
+					value="Submit"
+					onclick="sendOTP();"
+                    disabled
+				/>
+				<input
+					type="button"
+					id="btn_2"
+					name="submit"
+					class="submit"
+					value="Login"
+					onclick="go_login();"
+				/>
+			</form>
+		</div>
+	</body>
+</html>

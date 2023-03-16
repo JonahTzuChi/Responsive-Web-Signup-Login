@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/x-icon" href="https://cfims.tzuchi.com.my/media/images/favicon.jpg">
+		<title>Entrance</title>
+		<style></style>
+        <link rel="stylesheet" href="login.css" />
+		<link rel="stylesheet" href="base.css" />
+		<script></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.min.js"></script>
+	</head>
+
+	<body>
+		<div class="main">
+			<!--Future get file from media server-->
+			<img
+				src="https://cfims.tzuchi.com.my/media/images/logo.jpg"
+				class="avatar"
+			/>
+			<h1>Login</h1>
+			<form>
+				<p>Username</p>
+				<input type="text" id="username" placeholder="Enter Username" />
+				<p>Password</p>
+				<input type="password" id="password" />
+                <a href="#"><span>Forget my password</span></a>
+				<input
+					type="button"
+					id="btn_1"
+					name="submit"
+					class="submit"
+					value="Login"
+					onclick="login();"
+				/>
+				<input
+					type="button"
+					id="btn_2"
+					name="submit"
+					class="submit"
+					value="Register"
+					onclick="go_register();"
+				/>
+                
+			</form>
+		</div>
+	</body>
+</html>
